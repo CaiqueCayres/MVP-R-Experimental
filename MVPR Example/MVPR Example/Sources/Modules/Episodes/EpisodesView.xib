@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodesView" customModule="MVPR_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="4fi-R3-dLB" id="YjA-65-wvv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4fi-R3-dLB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showme" translatesAutoresizingMaskIntoConstraints="NO" id="x51-Ix-yd8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show me what you got" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgt-P4-D0N">
+                    <rect key="frame" x="24" y="50" width="327" height="133"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.13156629850000001" green="0.1331419428" blue="0.1331419428" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <size key="shadowOffset" width="-4" height="4"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crie um novo fluxo que apresente uma lista com os episodios de todas as temporadas " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJ4-bb-moG">
+                    <rect key="frame" x="24" y="532" width="327" height="119"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.13156629850000001" green="0.1331419428" blue="0.1331419428" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <size key="shadowOffset" width="-4" height="4"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fNx-g5-Y2j" firstAttribute="bottom" secondItem="sJ4-bb-moG" secondAttribute="bottom" constant="16" id="1To-GG-SRA"/>
+                <constraint firstItem="sJ4-bb-moG" firstAttribute="leading" secondItem="fNx-g5-Y2j" secondAttribute="leading" constant="24" id="7R3-DT-KcR"/>
+                <constraint firstItem="mgt-P4-D0N" firstAttribute="top" secondItem="fNx-g5-Y2j" secondAttribute="top" constant="30" id="EfP-2n-REd"/>
+                <constraint firstItem="fNx-g5-Y2j" firstAttribute="trailing" secondItem="sJ4-bb-moG" secondAttribute="trailing" constant="24" id="IRx-bT-yQs"/>
+                <constraint firstItem="x51-Ix-yd8" firstAttribute="top" secondItem="4fi-R3-dLB" secondAttribute="top" id="PMG-2J-KZY"/>
+                <constraint firstItem="fNx-g5-Y2j" firstAttribute="trailing" secondItem="mgt-P4-D0N" secondAttribute="trailing" constant="24" id="bTd-Ip-mzS"/>
+                <constraint firstItem="mgt-P4-D0N" firstAttribute="leading" secondItem="fNx-g5-Y2j" secondAttribute="leading" constant="24" id="cnT-FS-lfn"/>
+                <constraint firstItem="x51-Ix-yd8" firstAttribute="leading" secondItem="fNx-g5-Y2j" secondAttribute="leading" id="i10-eE-aBt"/>
+                <constraint firstItem="fNx-g5-Y2j" firstAttribute="trailing" secondItem="x51-Ix-yd8" secondAttribute="trailing" id="nCg-z7-WSL"/>
+                <constraint firstAttribute="bottom" secondItem="x51-Ix-yd8" secondAttribute="bottom" id="x4I-4O-1cu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fNx-g5-Y2j"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="showme" width="1080" height="1920"/>
+    </resources>
+</document>

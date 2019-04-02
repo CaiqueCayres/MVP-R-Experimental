@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectionView" customModule="MVPR_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="charactersButton" destination="UVW-ZA-lR9" id="1tm-li-onB"/>
+                <outlet property="episodesButton" destination="H5n-J9-Wb0" id="di0-VW-4Pd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6pI-7S-bNd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-Du-KmN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="DZc-0G-Wak">
+                    <rect key="frame" x="24" y="50" width="327" height="224.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pesquisar por" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55Y-D1-qyk">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="48"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="lfU-zs-67l">
+                            <rect key="frame" x="0.0" y="72" width="327" height="152.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVW-ZA-lR9">
+                                    <rect key="frame" x="0.0" y="0.0" width="152.5" height="152.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="UVW-ZA-lR9" secondAttribute="height" id="wW1-vG-lAU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                    <size key="titleShadowOffset" width="2" height="1"/>
+                                    <state key="normal" title="Personagens" backgroundImage="birdperson">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="charButtonAction:" destination="-1" eventType="touchUpInside" id="mB8-70-vSj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5n-J9-Wb0">
+                                    <rect key="frame" x="174.5" y="0.0" width="152.5" height="152.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="H5n-J9-Wb0" secondAttribute="height" id="3hd-zs-qSc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                    <size key="titleShadowOffset" width="2" height="2"/>
+                                    <state key="normal" title="Episódios" backgroundImage="mrPuppybuthole">
+                                        <color key="titleColor" red="0.94901960780000005" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="episodesButtonAction:" destination="-1" eventType="touchUpInside" id="zjY-Ue-BhD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="H5n-J9-Wb0" firstAttribute="width" secondItem="H5n-J9-Wb0" secondAttribute="height" id="gyC-5o-8zi"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DZc-0G-Wak" secondAttribute="trailing" constant="24" id="0eN-VW-uii"/>
+                <constraint firstAttribute="bottom" secondItem="oKT-Du-KmN" secondAttribute="bottom" id="7dO-i9-e3v"/>
+                <constraint firstItem="ffq-Ec-Y31" firstAttribute="trailing" secondItem="oKT-Du-KmN" secondAttribute="trailing" id="Vjc-cn-7eD"/>
+                <constraint firstItem="DZc-0G-Wak" firstAttribute="top" secondItem="ffq-Ec-Y31" secondAttribute="top" constant="30" id="abH-jp-fty"/>
+                <constraint firstItem="oKT-Du-KmN" firstAttribute="leading" secondItem="ffq-Ec-Y31" secondAttribute="leading" id="qRZ-8P-dfS"/>
+                <constraint firstItem="oKT-Du-KmN" firstAttribute="top" secondItem="6pI-7S-bNd" secondAttribute="top" id="ysF-iI-6wY"/>
+                <constraint firstItem="DZc-0G-Wak" firstAttribute="leading" secondItem="ffq-Ec-Y31" secondAttribute="leading" constant="24" id="zGh-aC-HkC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ffq-Ec-Y31"/>
+            <point key="canvasLocation" x="49" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="birdperson" width="190.55999755859375" height="168"/>
+        <image name="mrPuppybuthole" width="900" height="900"/>
+        <image name="select" width="1536" height="2732"/>
+    </resources>
+</document>
