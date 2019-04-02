@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVPR Example/Resources/ViewController.swift"
-            timestampString = "569200004.431452"
+            filePath = "MVPR Example/Sources/Modules/Select/SelectionRouter.swift"
+            timestampString = "575865370.397378"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "loadPatterns()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

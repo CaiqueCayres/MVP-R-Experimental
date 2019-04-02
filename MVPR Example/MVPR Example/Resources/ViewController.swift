@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+        super.viewDidAppear(animated)
         let delegate = UIApplication.shared.delegate as? AppDelegate
         delegate?.rootRouter.next?.startModule()
     }
